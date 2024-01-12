@@ -1,0 +1,41 @@
+use App\Controller\HomeController;
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+    # le controller pour la page d'accueil home a été créé de façon automatique
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+
+
+a_propos:
+    # je Définis la route pour la page A propos
+    # config/routes.yaml
+    path: /a-propos
+    controller: App\Controller\A_proposController::index
+
+
+livres_numeriques:
+    # Définit la route pour la page Livres numériques
+    path: /livres-numeriques
+    controller: App\Controller\Livres_numeriquesController::index
+
+programme_couronne_eclatante:
+    # Définit la route pour la page Programme Couronne Eclatante
+    path: /programme-couronne-eclatante
+    controller: App\Controller\Programme_couronne_eclatanteController::index
+
+panier:
+    # Définit la route pour la page Panier
+    path: /panier
+    controller: App\Controller\PanierController::index
+
+devenir_membre:
+    # Définit la route pour la page Devenir Membre
+    path: /devenir-membre
+    controller: App\Controller\Devenir_membreController::index
+
+contact:
+# Définit la route pour la page Contact
+    path: /contact
+    controller: App\Controller\ContactController::index
